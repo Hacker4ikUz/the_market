@@ -45,11 +45,6 @@ function reload(arr, place) {
         place.append(div)
 
         button.onclick = () => {
-            let cartbtn = document.querySelectorAll('.cart .item .bottom .btn')
-            cartbtn.forEach(el => {
-                el.innerHTML = 'Удалить'
-            })
-            console.log(cartbtn);
             button.classList.toggle('active-btn')
             if(button.innerHTML == 'В избранное'){
                 button.innerHTML = 'Добавлено'
